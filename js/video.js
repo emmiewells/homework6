@@ -47,5 +47,16 @@ document.querySelector('#skip').addEventListener("click", function() {
 	video.currentTime = (video.currentTime + 5);
 	video.play();
 	console.log(video.currentTime);
-	
+
+});
+
+document.querySelector('#old').addEventListener("click", function() {
+	var el = document.getElementById('myVideo').setAttribute('class', 'oldTime');
+	console.log("grayscale");
+
+});
+
+document.querySelector('#original').addEventListener("click", function() {
+	var el = document.getElementById('myVideo').removeAttribute('class', 'oldTime');
+	console.log("original");
 });
